@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('oran.png') no-repeat center center/cover;
+    animation: bounceFromBottom 2s ease-out;
+  }
+
+  
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.400);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+  }
+  
+  .h1 {
+    font-size: 40px;
+    color: white;
+    margin: 0;
+    animation: bounceFromTop 2s ease-out;
+  }
+  
+  .p {
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px 0 0;
+    animation: bounceFromBottom 2s ease-out;
+  }
+  
+  @keyframes bounceFromTop {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounceFromBottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
